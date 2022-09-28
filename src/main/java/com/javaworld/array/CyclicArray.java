@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CyclicArray {
 
-	static void rotate(int a[]) {
+	public static int[] rotate(int a[]) {
 		int i=0,j=a.length-1;
 		while(i !=j) {
 				int temp=a[i];
@@ -12,6 +12,7 @@ public class CyclicArray {
 				a[j]=temp;
 				i++;
 			}
+		return a;
 		
 	}
 	public static void main(String[] args) {
